@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EEEEEE;
+    font-family: 'Ubuntu', 'Courier New', Courier, monospace;
+}
+
+svg {
+    background-color: #404040;
+    border-radius: 50px;
+}
+
+hr {
+    width: 75%;
+}
+
+.content {
+    width: 595px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FFFBE9;
+}
+
+.pp > img {
+    aspect-ratio: 1 / 1;
+    width: 280px;
+    border-radius: 150px;
+    border-style: solid;
+    border-color: #FFE69A;
+}
+
+.myname {
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 28px;
+    font-size: 26pt;
+}
+
+.whoami {
+    padding: 20px;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.whoami > h2 {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.whoami > p {
+    margin: 0;
+    justify-content: center;
+    color: #404040;
+}
+
+.whoami > select {
+    font-size: 12pt;
+    font-family: 'Ubuntu', 'Courier New', Courier, monospace;
+    margin: 12px 0;
+    background-color: #F5F5F5;
+    text-align: center;
+}
+
+.whoami > option[selected] {
+    display: block;
+    position: relative;
+}
+
+.whoami > .ilove {
+    visibility: hidden;
+    position: absolute;
+}
+
+.knowledge {
+    text-align: center;
+}
+
+.knowledge h3 {
+    margin: 6px;
+}
+
+.languages > details {
+    margin: 12px 0;
+}
+
+.languages > details > p {
+    padding: 0 80px;
+}
+
+.certificados > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.certificados > ul > li {
+    margin: 4px 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact > p {
+    margin: 8px 0;
+}
+
+@media screen and (max-width: 595px) {
+    .content {
+        width: 345px;
+    }
+}
+
+/* Galaxy Fold */
+@media screen and (max-width: 340px) {
+    .content {
+        width: 280px;
+    }
+    .whoami > select {
+        width: 190px;
+    }
+    .pp > img {
+        width: 200px;
+    }
+    .languages > details > p {
+        padding: 0;
+    }
+}
